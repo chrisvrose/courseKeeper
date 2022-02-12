@@ -25,7 +25,7 @@ POST http://localhost:8080/chapter
 Content-Type: application/json
 
 {
-    "name":"The bigger course",
+    "name":"The biggerer course",
     "courses":[
         {
             "name":"Biggewr Course 1"
