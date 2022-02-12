@@ -1,0 +1,45 @@
+### Get all courses
+GET http://localhost:8080/course/
+
+### Get one courses
+GET http://localhost:8080/course/25
+
+### Get all courses
+POST http://localhost:8080/course/
+Content-Type: application/json
+
+{
+    "id":5,
+    "name":"hello",
+    "contents":[32,32]
+}
+
+### Get all courses
+DELETE http://localhost:8080/course/1
+
+###
+GET http://localhost:8080/chapter
+
+### Create chapter
+POST http://localhost:8080/chapter
+Content-Type: application/json
+
+{
+    "name":"The bigger course",
+    "courses":[
+        {
+            "name":"Biggewr Course 1"
+        },
+        {
+            "name":"Biggewr Course 2"
+        }
+    ]
+}
+### CREATE ASSOC
+PUT http://localhost:8080/chapter/20/add
+Content-Type: application/json
+
+{
+    "name":"HAHAHAHA",
+    "contents":[83,44,24,64]
+}
